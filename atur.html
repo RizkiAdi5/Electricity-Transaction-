@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Create New Usage Record</h2>
+<form action="crud.php" method="post">
+    <input type="hidden" name="create" value="1">
+    Pelanggan ID: <input type="text" name="pelanggan_id"><br>
+    Bulan: <input type="text" name="bulan"><br>
+    Tahun: <input type="text" name="tahun"><br>
+    Daya: <input type="text" name="daya"><br>
+    Pemakaian KWh: <input type="text" name="pemakaian_kwh"><br>
+    <input type="submit" value="Create">
+</form>
+
+<h2>Read Usage Records</h2>
+<form action="crud.php" method="get">
+    <input type="hidden" name="read" value="1">
+    <input type="submit" value="Read">
+</form>
+
+<h2>Update Usage Record</h2>
+<form action="crud.php" method="post">
+    <input type="hidden" name="update" value="1">
+    ID: <input type="text" name="id"><br>
+    Pelanggan ID: <input type="text" name="pelanggan_id"><br>
+    Bulan: <input type="text" name="bulan"><br>
+    Tahun: <input type="text" name="tahun"><br>
+    Daya: <input type="text" name="daya"><br>
+    Pemakaian KWh: <input type="text" name="pemakaian_kwh"><br>
+    <input type="submit" value="Update">
+</form>
+
+<h2>Delete Usage Record</h2>
+<form action="crud.php" method="post">
+    <input type="hidden" name="delete" value="1">
+    ID: <input type="text" name="id"><br>
+    <input type="submit" value="Delete">
+</form>
+
+</body>
+</html>
